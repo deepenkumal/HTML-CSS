@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url('burger.jpg');
+    background-color: darkgray;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    color: white;
+}
+.container{
+ /*    display: grid;
+    grid-template-rows: auto auto auto; */
+}
+.header{
+   display: grid;
+   grid-template-columns: 5% 80% 15%;
+    
+}
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-column-gap:15px;
+    justify-content: center;
+    align-content: center;
+    list-style-type: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.navbar-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-primary{
+    color: white;
+    background-color: green;
+    border-radius: 25px;
+    padding: 10px 15px ;
+    border: none;
+    outline: none;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 40px;
+}
+.footer{
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10vh;
+}
+.scroll-down{
+    display: grid;
+}
+.scroll-down div{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+}
+.social-icon{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: 5px;
+    
+
+}
+.social-icon button{
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    padding: 8px;
+    height: 30px;
+    width: 30px;
+}
+

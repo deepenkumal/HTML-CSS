@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-navbar{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+height: 7vh;
+background-color: #461220;
+}
+.top-navbar1{
+    display: flex;
+    justify-content: center;
+
+    
+}
+.top-navbar1 ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 12px;
+    justify-content: center;
+    align-content: center;
+    list-style-type: none;
+}
+.top-navbar1 ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color:white;
+}
+.top-navbar2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.top-navbar2 a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 15vh;
+}
+.brand-logo{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-logo img{
+    height: 100%;
+}
+.navbar-items ul {
+    height: 15vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-column-gap: 20px;
+    justify-content: start;
+    align-content: center;
+    list-style-type: none;
+
+}
+.navbar-items ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.navbar-items ul li a:hover{
+    background-color: #588b8b;
+}
+.body-image{
+    height: 80vh;
+   /* background-image: url('film.jpg');
+    background-size: cover;*/
+}
+.body-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.body-detail{
+    margin: 20px 10%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+}
+.aboutus{
+    height: 70vh;
+    padding: 20px 20px;
+    background-color: red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.aboutus h2{
+    margin: 20px;
+}
+.aboutus button{
+    padding: 10px 10px;
+    background-color: red;
+    border: 1 px solid white ;
+    outline: 0;
+    
+}
+.aboutus button a{
+    color: white;
+    text-decoration:none;
+}
+.name{
+ color: #e63946;
+ margin: 10px 0;
+}
+.chairman1{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.chairman1 img{
+    height: 60%;
+    border-radius: 20px;
+    border: 1px solid ;
+}
+.chairman2{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.chairman2 img{
+    height: 60%;
+    border-radius: 20px;
+    border: 1px solid ;
+}
+
+
+.popular-course{
+    margin: 20px 10%;
+    height: 100vh;
+}
+.courses{
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 20px;
+}
+.course{
+    height: 40vh;
+    margin-top: 20px;
+    
+    
+}
+.course p,h3{
+    margin: 10px 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+.image-course{
+    max-width: 100%;
+    
+}
+
+@media screen and (max-width: 900px){
+    .navbar-items ul{
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 5px;
+        grid-template-rows: auto;
+    }
+    .top-navbar1 ul{
+        grid-template-columns: auto auto;
+        justify-content: start;
+        grid-column-gap: 5px;
+    }
+}
